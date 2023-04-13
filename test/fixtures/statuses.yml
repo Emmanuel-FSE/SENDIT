@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parcel: one
+  location: MyString
+  status: MyString
+
+two:
+  parcel: two
+  location: MyString
+  status: MyString

@@ -10,9 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_13_140422) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_13_144435) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "parcels", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "parcel_name"
+    t.string "pickup_location"
+    t.string "destination"
+    t.integer "weight"
+    t.integer "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_parcels_on_user_id"
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.bigint "parcel_id", null: false
+    t.string "location"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["parcel_id"], name: "index_statuses_on_parcel_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -24,4 +45,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_13_140422) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "parcels", "users"
+  add_foreign_key "statuses", "parcels"
 end

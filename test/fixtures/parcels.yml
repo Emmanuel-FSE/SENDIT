@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  parcel_name: MyString
+  pickup_location: MyString
+  destination: MyString
+  weight: 1
+  price: 1
+
+two:
+  user: two
+  parcel_name: MyString
+  pickup_location: MyString
+  destination: MyString
+  weight: 1
+  price: 1

@@ -8,21 +8,21 @@
     )
     
     # Create a random number of parcels for the user (between 1 and 5)
-    # rand(1..5).times do
-    #   parcel = Parcel.create(
-    #     user_id: user.id,
-    #     parcel_name: Faker::Commerce.product_name,
-    #     pickup_location: Faker::Address.full_address,
-    #     destination: Faker::Address.full_address,
-    #     weight: rand(1..50),
-    #     price: rand(10..100)
-    #   )
+    rand(1..5).times do
+      parcel = Parcel.create(
+        user_id: user.id,
+        parcel_name: Faker::Commerce.product_name,
+        pickup_location: Faker::Address.full_address,
+        destination: Faker::Address.full_address,
+        weight: rand(1..50),
+        price: rand(10..100)
+      )
       
-    #   # Create a status for the parcel
-    #   Status.create(
-    #     parcel_id: parcel.id,
-    #     location: Faker::Address.full_address,
-    #     status: Faker::Lorem.word
-    #   )
-    # end
+      # Create a status for the parcel
+      Status.create(
+        parcel_id: parcel.id,
+        location: Faker::Address.full_address,
+        status: Faker::Lorem.word
+      )
+    end
   end
