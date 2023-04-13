@@ -1,7 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+10.times do
+    user = User.create(
+      username: Faker::Internet.username,
+      full_name: Faker::Name.name,
+      email: Faker::Internet.email,
+      password_digest: Faker::Internet.password,
+      user_type: ['Admin', 'Customer'].sample
+    )
+    
+    # Create a random number of parcels for the user (between 1 and 5)
+    # rand(1..5).times do
+    #   parcel = Parcel.create(
+    #     user_id: user.id,
+    #     parcel_name: Faker::Commerce.product_name,
+    #     pickup_location: Faker::Address.full_address,
+    #     destination: Faker::Address.full_address,
+    #     weight: rand(1..50),
+    #     price: rand(10..100)
+    #   )
+      
+    #   # Create a status for the parcel
+    #   Status.create(
+    #     parcel_id: parcel.id,
+    #     location: Faker::Address.full_address,
+    #     status: Faker::Lorem.word
+    #   )
+    # end
+  end
