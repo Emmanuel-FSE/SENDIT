@@ -1,0 +1,2 @@
+class ParcelsController < ApplicationController
+end
