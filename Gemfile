@@ -15,6 +15,8 @@ gem "bcrypt"
 
 gem "active_model_serializers"
 
+gem 'sendgrid-ruby'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -27,6 +29,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'dotenv-rails'
 end
 
 group :development do
