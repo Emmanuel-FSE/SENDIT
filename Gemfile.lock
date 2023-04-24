@@ -152,6 +152,9 @@ GEM
     rake (13.0.6)
     reline (0.3.3)
       io-console (~> 0.5)
+    ruby_http_client (3.5.5)
+    sendgrid-ruby (6.6.2)
+      ruby_http_client (~> 3.4)
     thor (1.2.1)
     timeout (0.3.2)
     tzinfo (2.0.6)
@@ -162,7 +165,6 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -173,6 +175,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
+  sendgrid-ruby
   tzinfo-data
 
 RUBY VERSION
