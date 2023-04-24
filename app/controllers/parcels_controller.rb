@@ -11,12 +11,13 @@ class ParcelsController < ApplicationController
     
     def create
         parcel = Parcel.create!(parcel_params)
+        status = Status.create(parcel_id: parcel.id, location: parcel.pickup_location, status: "Pending")
         render json: parcel, status: :created
-    end
+      end
 
-    private
+        private
 
     def parcel_params
-        params.permit(:user_id, :parcel_name, :pickup_location, :destination, :weight, :price)
+        params.require(:formData).permit(:user_id, :parcel_name, :pickup_location, :destination, :weight, :price, :description)
     end
 end

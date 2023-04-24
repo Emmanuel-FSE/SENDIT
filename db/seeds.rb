@@ -14,6 +14,7 @@
         parcel_name: Faker::Commerce.product_name,
         pickup_location: Faker::Address.full_address,
         destination: Faker::Address.full_address,
+        description: Faker::Lorem.paragraph,
         weight: rand(1..50),
         price: rand(10..100)
       )
@@ -22,7 +23,7 @@
       Status.create(
         parcel_id: parcel.id,
         location: Faker::Address.full_address,
-        status: Faker::Lorem.word
+        status: ['Delivered', 'In-transit', 'Cancelled', 'Pending'].sample
       )
     end
   end
