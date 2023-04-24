@@ -1,0 +1,18 @@
+databases:
+  - name: SENDIT
+    databaseName: sendit_5k82
+    user: sendit_5k82_user
+
+services:
+  - type: web
+    name: SENDIT-BACKEND
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sendit_5k82
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
