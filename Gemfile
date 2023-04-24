@@ -16,9 +16,6 @@ gem "bcrypt"
 gem "active_model_serializers"
 
 gem 'sendgrid-ruby'
-
-gem 'rake'
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
