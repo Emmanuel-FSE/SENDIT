@@ -172,14 +172,14 @@ DEPENDENCIES
   bcrypt
   debug
   faker
-  pg (~> 1.1)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   sendgrid-ruby
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.7.4p191
+   ruby 2.7.0p0
 
 BUNDLED WITH
-   2.4.9
+   2.4.7
