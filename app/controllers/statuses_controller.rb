@@ -9,7 +9,7 @@ class StatusesController < ApplicationController
       if params[:location]
         if status.update(location: params[:location])
           render json: { message: 'Location updated successfully' }, status: :ok
-          from = SendGrid::Email.new(name: 'SENDITCouriers', email: 'emmanuel.mutisya@student.moringaschool.com')
+          from = SendGrid::Email.new(name: 'SENDITCouriers', email: 'emmanuel.mutisya16@gmail.com')
           to = SendGrid::Email.new(email: status.parcel.user.email)
           subject = 'Package location update.'
           content = SendGrid::Content.new(type: 'text/plain', value: "Your package #{status.parcel.parcel_name}, has had a location updated to #{status.location}")
@@ -23,7 +23,7 @@ class StatusesController < ApplicationController
       elsif params[:status]
         if status.update(status: params[:status])
           render json: { message: 'Status updated successfully' }, status: :ok
-          from = SendGrid::Email.new(name: 'SENDITCouriers', email: 'emmanuel.mutisya@student.moringaschool.com')
+          from = SendGrid::Email.new(name: 'SENDITCouriers', email: 'emmanuel.mutisya16@gmail.com')
           to = SendGrid::Email.new(email: status.parcel.user.email)
           subject = 'Package status update.'
           content = SendGrid::Content.new(type: 'text/plain', value: "Your package #{status.parcel.parcel_name}, has had a status updated to #{status.status}")
