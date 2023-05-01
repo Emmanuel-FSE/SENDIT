@@ -16,11 +16,11 @@ SendIT is a courier service that helps users deliver parcels to different destin
     12.User gets real-time email notification when Admin changes the present location of their parcel.
 
         Technical Implementation.
-Backend: Ruby on Rails
-Database: PostgreSQL
-Wireframes: Figma (mobile-friendly)
-Frontend: ReactJS & Redux Toolkit (state management)
-The project is built using ReactJS and Redux Toolkit for the frontend and Ruby on Rails for the backend, with PostgreSQL as the database.
+    Backend: Ruby on Rails
+    Database: PostgreSQL
+    Wireframes: Figma (mobile-friendly)
+    Frontend: ReactJS & Redux Toolkit (state management)
+    The project is built using ReactJS and Redux Toolkit for the frontend and Ruby on Rails for the backend, with PostgreSQL as the database.
 
         Conclusion
 SendIT is a courier service that provides a simple solution for users to deliver parcels to different destinations. With features like real-time email notifications and Google Maps integration, users can easily keep track of their parcel deliveries.
