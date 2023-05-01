@@ -3,17 +3,17 @@
 SendIT is a courier service that helps users deliver parcels to different destinations. It provides courier quotes(prices) based on weight categories. SendIT provides our user with a platform where they can get a quote on their parcels, create a delivery pickup and drop-off destination and track their order status online.
 
         MVP Features
-1.User can create an account and log in.\n
-2.User can create a parcel delivery order.\n
-3.User can change the destination of a parcel delivery order.\n
-4.User can cancel a parcel delivery order.\n
-5.User can see the details of a delivery order.\n
-6.Admin can change the status and present location of a parcel delivery order.\n
-7.The application displays a Google Map with Markers showing the pickup location and the destination.\n
-8.User gets real-time email notification when Admin changes the status of their parcel.\n
-9.The application displays a Google Map with a line connecting both Markers (pickup location and the destination).\n
-11.The application displays a Google Map with computed travel distance and journey duration between the pickup location and the destination.\n
-12.User gets real-time email notification when Admin changes the present location of their parcel.
+    1.User can create an account and log in.
+    2.User can create a parcel delivery order.
+    3.User can change the destination of a parcel delivery order.
+    4.User can cancel a parcel delivery order.
+    5.User can see the details of a delivery order.
+    6.Admin can change the status and present location of a parcel delivery order.
+    7.The application displays a Google Map with Markers showing the pickup location and the destination.
+    8.User gets real-time email notification when Admin changes the status of their parcel.
+    9.The application displays a Google Map with a line connecting both Markers (pickup location and the destination).
+    11.The application displays a Google Map with computed travel distance and journey duration between the pickup location and the destination.
+    12.User gets real-time email notification when Admin changes the present location of their parcel.
 
         Technical Implementation.
 Backend: Ruby on Rails
