@@ -117,7 +117,7 @@ GEM
     nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
     pg (1.4.6)
-    puma (5.6.5)
+    puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.4)
@@ -173,7 +173,7 @@ DEPENDENCIES
   debug
   faker
   pg (~> 1.1)
-  puma (~> 5.0)
+  puma (~> 5.6)
   rails (~> 7.0.4, >= 7.0.4.3)
   sendgrid-ruby
   tzinfo-data
